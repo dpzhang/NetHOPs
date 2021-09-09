@@ -1,5 +1,6 @@
 # Visualizing Uncertainty in Probabilistic Graphs with \Network Hypothetical Outcome Plots (NetHOPs)
 Authors: Dongping Zhang, Eytan Adar, and Jessica Hullman
+
 Full paper: <https://arxiv.org/abs/2108.09870>
 
 ## About this repository
