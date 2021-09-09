@@ -127,4 +127,5 @@ ENV/
 .ropeproject
 .Rproj.user
 
+# Mac 
 .DS_Store
