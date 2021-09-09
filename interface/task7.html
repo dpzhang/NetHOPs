@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><base href="/"><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link rel="stylesheet" href="//rawgithub.com/Caged/d3-tip/master/examples/example-styles.css"><link rel="stylesheet" href="./css/style.css"><title>Network Hypothetical Outcome Plot</title></head><body><div class="container-fluid" id="container-relative-height"><header class="row bg-navbar sticky-top"><div class="col-12"><img class="navbar-image" src="img/logo.png"> <img class="navbar-image" src="img/css.png"><p class="navbar-title">Network Hypothetical Outcome Plot (NetHOP)</p></div></header><div class="row" id="row-ctrl-hop-text"><div class="col-6" id="netHOP-column-wrapper"><div id="network-data-name" class="text-center font-weight-bold mb-3"></div><div id="netHOP-wrapper"></div><div id="netHOP-animation-control"><div class="netHOP-frameSlider-indicator"><p class="netHOP-frame-info h3">Realization: <span id="frameNum" class="badge badge-info">1</span></p><button type="button" class="ml-3 mb-2 btn btn-outline-dark py-1 px-2" id="btn-reset"><span class="material-icons align-text-top" data-toggle="tooltip" data-placement="right" title="Reset">cached</span></button></div><div class="mt-3" id="frame-slider"></div><div class="mt-3 hopCtrl-button-group"><div class="btn-group"><button class="btn btn-outline-dark py-1 px-2" id="btn-prev"><span class="material-icons align-text-top">skip_previous</span></button> <button type="button" class="btn btn-outline-dark py-1 px-2" id="btn-prevPlay"><span class="material-icons align-text-top icon-rotate" data-toggle="tooltip" data-placement="bottom" title="Backward Play">play_arrow</span></button> <button type="button" class="btn btn-outline-dark py-1 px-2" id="btn-pause"><span class="material-icons align-text-top" data-toggle="tooltip" data-placement="bottom" title="Pause">pause</span></button> <button type="button" class="btn btn-outline-dark py-1 px-2" id="btn-nextPlay"><span class="material-icons align-text-top" data-toggle="tooltip" data-placement="bottom" title="Forward Play">play_arrow</span></button> <button class="btn btn-outline-dark py-1 px-2" id="btn-next"><span class="material-icons align-text-top">skip_next</span></button></div></div></div></div><div class="col-6 bg-sidenav overflow-wrapper" id="task-column-wrapper"></div><div class="row mt-5 mb-auto mx-auto w-100 justify-content-center" id="background-nav-btns"><div class="col col-lg-3" id="btn-intro-prev-wrapper"></div><div class="mx-auto col-md-auto"></div><div class="col col-lg-3" id="btn-intro-next-wrapper"><button class="col mx-1 btn btn-primary sidenav-btn-custom" id="btn-task-next">Next</button></div></div></div></div><script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script><script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-analytics.js"></script><script>// Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyAmFMnmxePzfE77N5OhTz_effPaKXud7As",
+            authDomain: "nethop-5cdd6.firebaseapp.com",
+            databaseURL: "https://nethop-5cdd6.firebaseio.com",
+            projectId: "nethop-5cdd6",
+            storageBucket: "nethop-5cdd6.appspot.com",
+            messagingSenderId: "721121633805",
+            appId: "1:721121633805:web:06add6b351d58836c01744",
+            measurementId: "G-KG79CFPFW4"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();</script><script>function updateTextInput(val, numInputField) {
+            let cardHeader = document.querySelector(`#edgeSelect-header-task${numInputField}`)
+            let inputField = document.getElementById(`inputField-task${numInputField}`)
+
+            cardHeader.classList.add("bg-warning");
+            inputField.value = val;
+        }
+
+        function updateDensityInput(val) {
+            let cardHeader = document.querySelector("#deterministic-task-header");
+
+            let densityInputField = document.querySelector("#deterministic-guess");
+
+            cardHeader.classList.add("bg-warning");
+            densityInputField.value = val;
+        }
+
+        function updateUnstableNodeInput(val, numInputField) {
+            let cardHeader = document.querySelector(`#unstableNode-task-header-q${numInputField}`);
+            let inputField = document.querySelector(`#unstableNode-guess-q${numInputField}`)
+            cardHeader.classList.add("bg-warning");
+            inputField.value = val;
+        }</script><script src="js/task7.bundle.js"></script></body></html>
