@@ -8,7 +8,7 @@ arXiv: <https://arxiv.org/abs/2108.09870>
 
 ## About this repository
 
-This repository contains all supplemental materials for the IEEE VIS 2021 paper. If interested, check out the Medium post [here](https://medium.com/multiple-views-visualization-research-explained/what-is-graph-uncertainty-and-how-can-analysts-visualize-probabilistic-graphs-5f0d91eed37a).
+This repository contains supplemental materials for our IEEE VIS 2021 paper. For a high-level summary, see our Medium post [here](https://medium.com/multiple-views-visualization-research-explained/what-is-graph-uncertainty-and-how-can-analysts-visualize-probabilistic-graphs-5f0d91eed37a).
 
 ## Content
 
