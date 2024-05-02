@@ -2,7 +2,7 @@
 
 Authors: Dongping Zhang, Eytan Adar, and Jessica Hullman
 
-Full paper: <https://ieeexplore.ieee.org/document/9552465>
+Full paper: <https://doi.org/10.1109/TVCG.2021.3114679>
 
 arXiv: <https://arxiv.org/abs/2108.09870>
 
